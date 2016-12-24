@@ -22,9 +22,9 @@ ngrok http 8000
 ## Node and atlas-connect installation
 
 ### Prerequisits:
-1.Node
+1. Node
     ```brew install node```
-1.atlas-connect (ACE)
+1. atlas-connect (ACE)
     ```npm install -g atlas-connect```
 
 ### Start a new project
