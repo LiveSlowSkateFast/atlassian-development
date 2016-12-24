@@ -5,10 +5,10 @@
   "vendor": {
     "name": "LSSF Enterprises, LLC"
   },
-  "baseUrl": "{{localBaseUrl}}",
+  "baseUrl": "https://39ac7131.ngrok.io",
   "links": {
-    "self": "{{localBaseUrl}}/atlassian-connect.json",
-    "homepage": "{{localBaseUrl}}/atlassian-connect.json"
+    "self": "https://39ac7131.ngrok.io/atlassian-connect.json",
+    "homepage": "https://39ac7131.ngrok.io/atlassian-connect.json"
   },
   "authentication": {
     "type": "jwt"
