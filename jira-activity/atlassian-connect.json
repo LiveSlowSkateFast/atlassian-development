@@ -22,25 +22,12 @@
   "modules": {
     "generalPages": [
       {
-        "key": "hello-world-page-jira",
+        "key": "activity",
         "location": "system.top.navigation.bar",
         "name": {
-          "value": "Hello World"
+          "value": "Activity"
         },
-        "url": "/hello-world",
-        "conditions": [
-          {
-            "condition": "user_is_logged_in"
-          }
-        ]
-      },
-      {
-        "key": "hello-world-page-confluence",
-        "location": "system.header/left",
-        "name": {
-          "value": "Hello World"
-        },
-        "url": "/hello-world",
+        "url": "/activity",
         "conditions": [
           {
             "condition": "user_is_logged_in"
