@@ -36,6 +36,12 @@
             "condition": "can_use_application",
             "params": {
               "applicationKey": "jira-servicedesk"
+            },
+            "condition": "entity_property_equal_to",
+            "params": {
+                "entity": "user",
+                "propertyKey": "add_on_role",
+                "value": "admin"
             }
           }
         ]
