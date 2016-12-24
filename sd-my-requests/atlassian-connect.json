@@ -1,0 +1,45 @@
+{
+  "key": "my-add-on",
+  "name": "Ping Pong",
+  "description": "My very first add-on",
+  "vendor": {
+    "name": "Angry Nerds",
+    "url": "https://www.atlassian.com/angrynerds"
+  },
+  "baseUrl": "https://39ac7131.ngrok.io",
+  "links": {
+    "self": "{{localBaseUrl}}/atlassian-connect.json",
+    "homepage": "{{localBaseUrl}}/atlassian-connect.json"
+  },
+  "authentication": {
+    "type": "jwt"
+  },
+  "lifecycle": {
+    "installed": "/installed"
+  },
+  "scopes": [
+    "READ"
+  ],
+  "modules": {
+    "jiraProjectTabPanels": [
+      {
+        "key": "my-requests-link",
+        "name": {
+          "value": "My Requests"
+        },
+        "url": "/my-requests",
+        "conditions": [
+          {
+            "condition": "user_is_logged_in"
+          },
+          {
+            "condition": "can_use_application",
+            "params": {
+              "applicationKey": "jira-servicedesk"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
