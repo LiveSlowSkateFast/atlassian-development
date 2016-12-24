@@ -1,0 +1,25 @@
+{
+     "name": "Hello World",
+     "description": "Atlassian Connect add-on",
+     "key": "com.example.myaddon",
+     "baseUrl": "https://fb294a3f.ngrok.io",
+     "vendor": {
+         "name": "LSSF Enterprises, LLC"
+     },
+     "authentication": {
+         "type": "none"
+     },
+     "apiVersion": 1,
+     "modules": {
+         "generalPages": [
+             {
+                 "url": "/helloworld.html",
+                 "key": "hello-world",
+                 "location": "system.top.navigation.bar",
+                 "name": {
+                     "value": "Greeting"
+                 }
+             }
+         ]
+     }
+ }
